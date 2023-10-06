@@ -1,7 +1,7 @@
 export default function Input(props) {
   return (
-    <div>
-      <label className="block">
+    <>
+      <label className="input">
         {props.label}:
         <input
           type={props.type}
@@ -9,6 +9,6 @@ export default function Input(props) {
           onChange={(e) => props.setter(e.target.value, "input" + props.label)}
         />
       </label>
-    </div>
+    </>
   );
 }

@@ -12,7 +12,7 @@ export default function Form(props) {
   */
   return (
     <>
-      <div>
+      <div className="block">
         <Input
           value={name.value}
           setter={name.setter}
@@ -25,9 +25,8 @@ export default function Form(props) {
           type="email"
           label="Epost"
         />
-        <p>Nån får gärna se vad jag gjort för fel med checkboxen :D </p>
         <Checkbox
-          value={newsletter}
+          value={newsletter.value}
           setter={newsletter.setter}
           label="Nyhetsbrev"
         />

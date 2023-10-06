@@ -1,8 +1,11 @@
 export default function Checkbox(props) {
-    return (
-        <label className="block">
-            {props.label}
-            <input type="checkbox" checked={props.value} onChange={() => props.setter(!props.value)} />
-        </label>
-    )
+  const handleClick = () => {
+    props.setter(!props.value, "checkbox");
+  };
+  return (
+    <label className="input">
+      {props.label}
+      <input type="checkbox" checked={props.value} onChange={props.setter} />
+    </label>
+  );
 }

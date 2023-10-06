@@ -1,13 +1,14 @@
-import Card from './components/Card'
-import Form from './components/Form'
-import './styles.css'
+import Card from "./components/Card";
+import Form from "./components/Form";
+import "./styles.css";
 
 export default function App() {
-    return (
-        <div className="App">
-            <h1>React-kurs del 3</h1>
-            <Form />
-            <Card />
-        </div>
-    )
+  return (
+    <div className="App">
+      <h1>React-kurs del 3</h1>
+      <Form />
+      <hr />
+      <Card />
+    </div>
+  );
 }

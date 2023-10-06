@@ -43,7 +43,9 @@
   flex: 1 1 0%;
   border-top-left-radius: 6px;
   color: rgb(87, 70, 175);
-  box-shadow: currentcolor 0px -1px 0px 0px inset, currentcolor 0px 1px 0px 0px;
+  box-shadow:
+    currentcolor 0px -1px 0px 0px inset,
+    currentcolor 0px 1px 0px 0px;
 }
 .tabscontent {
   color: var(--colors-hiContrast);
@@ -58,15 +60,35 @@
   border-bottom-right-radius: 6px;
   outline: none;
 }
-.tabroot {
+.card {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: fit-content;
+  padding-inline: 32px;
+  padding-top: 32px;
+  margin-top: 32px;
+  margin-inline: auto;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 10px;
 }
+.card h2 {
+  font-size: 1rem;
+  margin-block: 0;
+}
+.card p {
+  font-size: 0.8rem;
+  margin-block: 0;
+  margin-bottom: 1rem;
+}
 .block {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 16px;
+}
+.input {
+  display: grid;
+  grid-template-columns: 100px 150px;
+  justify-items: start;
 }
 
 .App {
